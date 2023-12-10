@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish';
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    font-size: 16px;
+    background-color: rgb(5, 34, 53);
+    /* opacity: 0.2; */
+
+
+}
+
+.container{
+    position: relative;
+    top: 25vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* border: 2px solid rgb(0,0,0); */
+    width: auto;
+    /* height: 80%; */
+    height: auto;
+    flex-wrap: wrap;
+    z-index: 0;
+
+}
+.child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* height: 60vh; */
+    height: auto;
+   z-index: 1;
+   border-radius: 13px;
+   box-shadow: 5px 5px 10px 3px rgba(36, 35, 35, 0.4);
+   background-color: rgb(240, 248, 255);
+   padding: 10px;
+}
+form{
+    height: 60vh;
+     width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+input{
+    height: 50px;
+    /* height: auto; */
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    width: 95%;
+    border-radius: 10px;
+    border: none;
+    left: -45px;
+    background-color: transparent;
+    /* background-color: black; */
+    margin: 10px;
+    padding: 0px 20px 0px 0px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    color: azure;
+    background-color: #4978F0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    /* width: 100%; */
+
+}
+button:hover{
+    background-color: #325bc1;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+}
+input:hover{
+    cursor:text;
+    border: none;
+}
+input:focus{
+    border: 2px solid #4978F0;
+    /* transition-duration: 0.3s; */
+    outline: none;
+
+}
+
+
+@media screen and (max-width: 480px){
+    button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:767px){
+button{
+    width: 100%;
+}
+
+/* @media screen and (min-height:240px)
+{
+    input{
+        height:30px;
+    }
+
+    button{
+        padding: 5px 20px;
+        margin: 10px;
+    }
+} */
+}
+
